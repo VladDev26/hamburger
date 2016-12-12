@@ -1,0 +1,38 @@
+body{background: #222;}
+
+.burger{
+    position: relative;
+    margin: 50px auto 0;
+    width: 100px;
+}
+
+.burger__wrap{
+    cursor: pointer;
+    display: block;
+}
+
+.burger__el{
+    background: #eee;
+    display: block;
+    width: 100px;
+    height: 14px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 0.4s;
+}
+
+.open .burger__el--2{
+    width: 0;
+    opacity: 0;
+}
+
+.open .burger__el--3{
+    transform: rotate(45deg);
+    top: -24px;
+}
+
+.open .burger__el--1{
+    transform: rotate(-45deg);
+    top: 24px;
+}
